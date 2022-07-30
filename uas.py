@@ -17,7 +17,7 @@ df['total'] = df[data].sum(axis=1)
 
 
 # SIDEBAR
-st.sidebar.header("Please Filter Here:")
+st.sidebar.header("Filter :")
 wilayah = st.sidebar.multiselect(
     "Select The wilayah Type :",
     options=df["wilayah"].unique(),
@@ -32,7 +32,7 @@ df_selection = df.query(
 st.markdown("""---""")  # markdown
 
 
-st.title("Data Penindakan Pelanggaran 2021 - Maret")
+st.title("Data Pelanggaran 2021")
 
 
 st.markdown("""---""")
